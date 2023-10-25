@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <style>
+        #lorem{
+            font-size: 20px;
+            color: rgba(255, 0, 0, 0.916);
+        }
+    </style>
+</head>
+<body>
+    <h1>texto</h1>
+    
+    <p id="lorem" > Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt, autem velit dolorum consequatur distinctio aliquid cupiditate porro iste doloribus voluptates beatae enim nemo dolor sequi facilis placeat atque laboriosam?</p>
+
+    <button onclick="mudarCor()">mudar cor </button>
+    <button onclick="mudarFundo()">mudar fundo</button>
+
+    <script>
+       function mudarCor()
+       {
+        document.getElementById("lorem").style.color= "#836FFF"
+
+       }
+       function mudarFundo()
+       {
+        document.getElementById("lorem").style.backgroundColor="#00BFFF	"
+       }
+    </script>
+    
+</body>
+
+</html>
