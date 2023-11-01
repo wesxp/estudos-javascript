@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>Onde você nasceu?</h1>
+    País do seu nascimento: <input type="txtp" name="" id="textp">
+    <input type="button" value="Verificar" onclick="consulta()">
+    <div id="origem"></div>
+    <script>
+        function consulta(){
+            var pais =document.getElementById('textp').value 
+            var origem=document.getElementById('origem')
+            origem.innerHTML=`Seu país é ${pais}`
+            if(pais=='brasil'){
+                origem.innerHTML+='<p>Você é  Brasileiro</p>';
+            }else{
+                origem.innerHTML+='<p>Você é estrageiro</p> !!!';
+            }
+
+        }
+    </script>
+   
+    
+</body>
+</html>
